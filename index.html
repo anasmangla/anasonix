@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://www.anasonix.com/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://www.googletagmanager.com;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://fonts.googleapis.com https://fonts.gstatic.com; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://www.googletagmanager.com 'sha256-xW43P7oMhe/7PWe4Kh1Xse8v7/fW7AlIyLAHQ5Yfkuc=' 'sha256-niqBpnoPUElusVkjsBme48GXTHcxnuHlMa9qkN+O/9Q=';">
 
   <!-- Tailwind CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.3/tailwind.min.css" rel="stylesheet" />
@@ -74,7 +74,7 @@
 <body class="bg-gray-100 text-gray-800">
 
   <!-- Hero Section -->
-  <section class="relative bg-cover bg-center h-screen" style="background-image: url('images/hero.jpg')">
+  <section class="relative bg-cover bg-center h-screen hero-bg">
     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white px-4">
       <img src="images/anasonix_logo.png" alt="Anasonix Logo" class="mx-auto mb-6 w-32" loading="lazy">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Anasonix</h1>

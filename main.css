@@ -23,3 +23,7 @@ body {
   max-width: 640px;
   margin: auto;
 }
+
+.hero-bg {
+  background-image: url('images/hero.jpg');
+}
