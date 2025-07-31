@@ -1,0 +1,11 @@
+{
+  "name": "anasonix",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo \"dev server not implemented\"",
+    "build": "echo \"build not implemented\"",
+    "test": "node test/test.js"
+  }
+}
+
