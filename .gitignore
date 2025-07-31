@@ -1,0 +1,24 @@
+# Ignore node modules
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
+*.swp
+*.bak
+
+# Compiled assets
+/dist/
+/build/
+
+# Logs
+npm-debug.log
+
+# Environment files
+.env
+
+vendor/
+
