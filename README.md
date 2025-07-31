@@ -10,7 +10,7 @@ Anasonix is a website project built using modern web technologies. This reposito
    cd anasonix
    ```
 2. **Install dependencies**
-   The project uses [Tailwind CSS](https://tailwindcss.com/) and [Font Awesome](https://fontawesome.com/). Install Node.js dependencies:
+   Install Node.js packages and other assets:
    ```bash
    npm install
    ```
@@ -18,18 +18,28 @@ Anasonix is a website project built using modern web technologies. This reposito
    ```bash
    npm run dev
    ```
-   This will start a local development server with hot reloading.
+   This starts a local server with hot reloading so you can develop quickly.
 
-## Build & Deployment
+## Building the Project
 
-1. **Build the project**
+1. **Compile for production**
    ```bash
    npm run build
    ```
-   Compiled files will be generated in the `dist/` directory.
+   The optimized files will be placed in the `dist/` directory.
 
-2. **Deploy**
-   Upload the contents of `dist/` to your preferred hosting provider (e.g., Netlify, Vercel, or a traditional web server).
+## Running Tests
+
+The project includes a simple test suite. You can run it with npm or via the provided Makefile:
+
+```bash
+npm test       # run tests directly
+make test      # equivalent wrapper defined in the Makefile
+```
+
+## Deployment
+
+Upload the contents of `dist/` to your preferred hosting provider (e.g., Netlify, Vercel, or a traditional web server).
 
 ## Technologies Used
 
