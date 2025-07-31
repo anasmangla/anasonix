@@ -1,3 +1,3 @@
-const assert = require('assert');
-assert.strictEqual(1 + 1, 2, 'Basic arithmetic works');
-console.log('All tests passed!');
+test('basic arithmetic works', () => {
+  expect(1 + 1).toBe(2);
+});
