@@ -1,6 +1,6 @@
-# Anasonix Website
+# Anasonix
 
-Anasonix is a website project built using modern web technologies. This repository currently contains only the project logo, but the goal is to develop a full Tailwind CSS based website using Font Awesome icons and other tools.
+Anasonix is a website project built using modern web technologies. This repository currently contains images for Anasonix, including the project logo. The goal is to develop a full website using Tailwind CSS, Font Awesome icons, and other modern tools.
 
 ## Development Setup
 
@@ -10,7 +10,7 @@ Anasonix is a website project built using modern web technologies. This reposito
    cd anasonix
    ```
 2. **Install dependencies**
-   The project will use [Tailwind CSS](https://tailwindcss.com/) and [Font Awesome](https://fontawesome.com/). Install Node.js dependencies:
+   The project uses [Tailwind CSS](https://tailwindcss.com/) and [Font Awesome](https://fontawesome.com/). Install Node.js dependencies:
    ```bash
    npm install
    ```
@@ -18,7 +18,7 @@ Anasonix is a website project built using modern web technologies. This reposito
    ```bash
    npm run dev
    ```
-   This will start a local dev server with hot reloading.
+   This will start a local development server with hot reloading.
 
 ## Build & Deployment
 
@@ -26,7 +26,8 @@ Anasonix is a website project built using modern web technologies. This reposito
    ```bash
    npm run build
    ```
-   The compiled files will be generated in the `dist/` directory.
+   Compiled files will be generated in the `dist/` directory.
+
 2. **Deploy**
    Upload the contents of `dist/` to your preferred hosting provider (e.g., Netlify, Vercel, or a traditional web server).
 
@@ -37,9 +38,12 @@ Anasonix is a website project built using modern web technologies. This reposito
 - **JavaScript** tooling via npm scripts.
 - Optionally integrate additional tools like Webpack or Vite as the project grows.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
 ## Contact
 
 For questions or collaboration opportunities, please contact:
 
 - **Anas Mangla** – [anas.mangla@gmail.com](mailto:anas.mangla@gmail.com)
-
