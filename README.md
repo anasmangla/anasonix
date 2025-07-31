@@ -20,6 +20,8 @@ Anasonix is a website project built using modern web technologies. This reposito
    ```
 
    This starts a local server with hot reloading so you can develop quickly.
+You can modify the HTML files under `src/` while this server runs. Changes are compiled into `dist/` automatically.
+
 
 ## Building the Project
 
@@ -35,6 +37,14 @@ A simple `index.html` page is included. It uses Tailwind via a CDN link and
 displays the Anasonix logo. Upload this file (along with `images/`) to your
 web host if you want a quick placeholder page without running the build step.
 
+## Project Structure
+- `index.html` – quick landing page using Tailwind CDN.
+- `src/` – place your HTML templates, CSS (`input.css`), and any client-side JavaScript while running `npm run dev` to rebuild automatically.
+- `dist/` – compiled output from the dev and build scripts.
+- `images/` – static assets like logos.
+- `tests/` – Jest test files.
+
+
 ## Running Tests
 
 The project includes a simple test suite. You can run it with npm or via the provided Makefile:
@@ -48,15 +58,6 @@ make test      # equivalent wrapper defined in the Makefile
 
 Upload the contents of `dist/` to your preferred hosting provider (e.g., Netlify, Vercel, or a traditional web server).
 
-## Running Tests
-
-Use the provided `Makefile` to run any project tests.
-
-```bash
-make test
-```
-
-This command simply invokes `npm test`.
 
 ## Technologies Used
 
