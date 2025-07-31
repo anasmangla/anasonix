@@ -41,6 +41,16 @@ make test      # equivalent wrapper defined in the Makefile
 
 Upload the contents of `dist/` to your preferred hosting provider (e.g., Netlify, Vercel, or a traditional web server).
 
+## Running Tests
+
+Use the provided `Makefile` to run any project tests.
+
+```bash
+make test
+```
+
+This command simply invokes `npm test`.
+
 ## Technologies Used
 
 - **Tailwind CSS** for utility-first styling.
