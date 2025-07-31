@@ -6,11 +6,65 @@
   <title>Anasonix</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-  <div class="text-center p-8 bg-white rounded shadow">
-    <img src="images/anasonix_logo.png" alt="Anasonix Logo" class="mx-auto mb-4 w-32">
-    <h1 class="text-3xl font-bold mb-4">Welcome to Anasonix</h1>
-    <p class="text-gray-600">Stay tuned! Our website is coming soon.</p>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-screen" style="background-image: url('images/hero.jpg')">
+    <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white px-4">
+      <img src="images/anasonix_logo.png" alt="Anasonix Logo" class="mx-auto mb-6 w-32">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Anasonix</h1>
+      <p class="mb-8 max-w-2xl">Your partner in digital transformation.</p>
+      <div class="space-x-4">
+        <a href="#services" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded">Get Started</a>
+        <a href="contact.html" class="bg-transparent border border-white hover:bg-white hover:text-black text-white font-semibold py-2 px-4 rounded">Schedule a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section id="services" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4 grid gap-8 md:grid-cols-4 text-center">
+      <div>
+        <img src="images/service-icons/icon1.png" alt="Service 1" class="mx-auto mb-4 w-16 h-16">
+        <h3 class="text-xl font-semibold mb-2">Consulting</h3>
+        <p class="text-gray-600 text-sm">Expert guidance tailored to your business.</p>
+      </div>
+      <div>
+        <img src="images/service-icons/icon2.png" alt="Service 2" class="mx-auto mb-4 w-16 h-16">
+        <h3 class="text-xl font-semibold mb-2">Development</h3>
+        <p class="text-gray-600 text-sm">Robust solutions built with modern tech.</p>
+      </div>
+      <div>
+        <img src="images/service-icons/icon3.png" alt="Service 3" class="mx-auto mb-4 w-16 h-16">
+        <h3 class="text-xl font-semibold mb-2">Design</h3>
+        <p class="text-gray-600 text-sm">User-focused interfaces that engage.</p>
+      </div>
+      <div>
+        <img src="images/service-icons/icon4.png" alt="Service 4" class="mx-auto mb-4 w-16 h-16">
+        <h3 class="text-xl font-semibold mb-2">Support</h3>
+        <p class="text-gray-600 text-sm">Ongoing help to keep things running.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Mission -->
+  <section class="py-12 bg-gray-100">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+      <p class="text-gray-700">We aim to empower organizations through technology, delivering innovative solutions that drive success.</p>
+    </div>
+  </section>
+
+  <!-- Value Proposition -->
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Value Proposition</h2>
+      <p class="text-gray-700">By combining strategic thinking with technical expertise, we provide measurable results and lasting partnerships.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <div class="text-center py-12">
+    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded">Book Your Free Consultation</a>
   </div>
 </body>
 </html>

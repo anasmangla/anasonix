@@ -1,6 +1,6 @@
 # Anasonix
 
-Anasonix is a website project built using modern web technologies. This repository currently contains images for Anasonix, including the project logo. The goal is to develop a full website using Tailwind CSS, Font Awesome icons, and other modern tools.
+Anasonix is a website project built using modern web technologies. The repository provides a simple landing page and the project logo. Add your own hero and service images as needed. The goal is to develop a full website using Tailwind CSS, Font Awesome icons, and other modern tools.
 
 ## Development Setup
 
