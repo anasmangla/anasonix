@@ -1,6 +1,5 @@
 {
   "name": "anasonix",
-
   "version": "1.0.0",
   "description": "Anasonix is a website project built using modern web technologies. This repository currently contains images for Anasonix, including the project logo. The goal is to develop a full website using Tailwind CSS, Font Awesome icons, and other modern tools.",
   "main": "index.js",
