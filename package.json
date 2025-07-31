@@ -1,0 +1,20 @@
+{
+  "name": "anasonix",
+  "version": "1.0.0",
+  "description": "Anasonix is a website project built using modern web technologies. This repository currently contains images for Anasonix, including the project logo. The goal is to develop a full website using Tailwind CSS, Font Awesome icons, and other modern tools.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "jest": "^30.0.5",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
