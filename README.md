@@ -31,6 +31,16 @@ Anasonix is a website project built using modern web technologies. This reposito
 2. **Deploy**
    Upload the contents of `dist/` to your preferred hosting provider (e.g., Netlify, Vercel, or a traditional web server).
 
+## Running Tests
+
+Use the provided `Makefile` to run any project tests.
+
+```bash
+make test
+```
+
+This command simply invokes `npm test`.
+
 ## Technologies Used
 
 - **Tailwind CSS** for utility-first styling.
