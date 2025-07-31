@@ -1,0 +1,11 @@
+{
+  "name": "anasonix",
+  "version": "1.0.0",
+  "description": "Website project built using modern web technologies.",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
