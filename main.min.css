@@ -1,0 +1,1 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');:root{--color-orange:#ff7f50;--color-green:#32cd32}body{font-family:'Inter',sans-serif}.btn-orange{background-color:var(--color-orange);color:white}.btn-green{background-color:var(--color-green);color:white}.container-custom{max-width:640px;margin:auto}

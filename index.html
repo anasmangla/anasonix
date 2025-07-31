@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anasonix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anasonix – AI Integration &amp; E-Commerce Solutions</title>
+  <meta name="description" content="Anasonix provides AI integration, e-commerce coaching, website development and marketing solutions." />
+  <link rel="canonical" href="https://www.anasonix.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; script-src 'self' https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://www.googletagmanager.com;">
 
   <!-- Tailwind CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.3/tailwind.min.css" rel="stylesheet" />
@@ -13,13 +18,57 @@
 
   <!-- AOS Animation -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
 
   <!-- Custom Styles -->
-  <link href="main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.min.css" />
 
+  <!-- Social Sharing -->
+  <meta property="og:title" content="Anasonix – AI Integration &amp; E-Commerce Solutions" />
+  <meta property="og:description" content="Anasonix provides AI integration, e-commerce coaching, website development and marketing solutions." />
+  <meta property="og:image" content="https://www.anasonix.com/images/anasonix_logo.png" />
+  <meta property="og:url" content="https://www.anasonix.com/" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Anasonix – AI Integration &amp; E-Commerce Solutions" />
+  <meta name="twitter:description" content="Anasonix provides AI integration, e-commerce coaching, website development and marketing solutions." />
+  <meta name="twitter:image" content="https://www.anasonix.com/images/anasonix_logo.png" />
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Anasonix Digital Solutions",
+    "telephone": "716-514-3947",
+    "email": "info@anasonix.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6951 Williams Road",
+      "addressLocality": "Niagara Falls",
+      "addressRegion": "NY",
+      "postalCode": "14304",
+      "addressCountry": "US"
+    },
+    "url": "https://www.anasonix.com",
+    "logo": "https://www.anasonix.com/images/anasonix_logo.png",
+    "areaServed": "United States",
+    "description": "End‑to‑end digital solutions including AI integration, e‑commerce training, web development and marketing."
+  }
+  </script>
+
+  <!-- AOS Init -->
   <script>
     window.addEventListener('DOMContentLoaded', () => AOS.init());
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
   </script>
 </head>
 <body class="bg-gray-100 text-gray-800">
@@ -27,7 +76,7 @@
   <!-- Hero Section -->
   <section class="relative bg-cover bg-center h-screen" style="background-image: url('images/hero.jpg')">
     <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center text-white px-4">
-      <img src="images/anasonix_logo.png" alt="Anasonix Logo" class="mx-auto mb-6 w-32">
+      <img src="images/anasonix_logo.png" alt="Anasonix Logo" class="mx-auto mb-6 w-32" loading="lazy">
       <h1 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Anasonix</h1>
       <p class="mb-8 max-w-2xl text-lg">Your partner in digital transformation.</p>
       <div class="space-x-4">
@@ -37,7 +86,7 @@
     </div>
   </section>
 
-  <!-- Services Overview -->
+  <!-- Services Section -->
   <section id="services" class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-4 grid gap-12 md:grid-cols-4 text-center" data-aos="fade-up">
       <div>
@@ -86,6 +135,6 @@
     </a>
   </section>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.min.js" defer></script>
 </body>
 </html>
