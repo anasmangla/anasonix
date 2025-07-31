@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Anasonix</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.3/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => AOS.init());
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="text-xl font-bold text-blue-700">Anasonix</a>
+      <ul class="flex gap-4">
+        <li><a href="index.html" class="text-gray-600 hover:text-blue-700">Home</a></li>
+        <li><a href="#" class="text-blue-700 font-semibold">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="container mx-auto px-4 py-12">
+    <div class="text-center mb-12" data-aos="fade-down">
+      <h1 class="text-4xl font-bold mb-4">About Anasonix</h1>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">Anasonix is a digital solutions provider founded by Anas Mangla with a mission to help businesses thrive using modern, user-friendly technologies.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-10 items-center" data-aos="fade-up">
+      <div class="md:col-span-1 flex justify-center">
+        <img src="images/anasonix_logo.png" alt="Anasonix Logo" class="w-48 rounded shadow" />
+      </div>
+      <div class="md:col-span-2 space-y-4">
+        <h2 class="text-2xl font-semibold">Anas Mangla</h2>
+        <p>Anas is a technology enthusiast and entrepreneur dedicated to building secure, scalable, and elegant web solutions. With a passion for clean code and thoughtful design, he established Anasonix to empower small businesses and creators through accessible tech.</p>
+        <p><strong>Mission:</strong> Deliver accessible digital experiences that combine strong security with aesthetic design, enabling business owners to grow confidently in the digital age.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="bg-white py-12" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Location</h2>
+      <p class="mb-4">Naz716 Business Center<br>6951 Williams Rd<br>Niagara Falls, NY 14304</p>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe class="w-full h-96 rounded shadow" src="https://www.google.com/maps?q=Naz716+Business+Center,+6951+Williams+Rd,+Niagara+Falls,+NY+14304&output=embed" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="container mx-auto px-4 py-12" data-aos="fade-up">
+    <h2 class="text-2xl font-bold mb-4">Our Team</h2>
+    <p class="text-gray-600">Details about the Anasonix team are coming soon. We are assembling a skilled group of designers, developers, and strategists committed to innovation and excellence.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6 mt-12">
+    <p>&copy; <span id="year"></span> Anasonix. Built by Anas Mangla.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
