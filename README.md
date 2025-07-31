@@ -27,7 +27,13 @@ Anasonix is a website project built using modern web technologies. This reposito
    ```bash
    npm run build
    ```
-   The optimized files will be placed in the `dist/` directory.
+The optimized files will be placed in the `dist/` directory.
+
+## Basic Landing Page
+
+A simple `index.html` page is included. It uses Tailwind via a CDN link and
+displays the Anasonix logo. Upload this file (along with `images/`) to your
+web host if you want a quick placeholder page without running the build step.
 
 ## Running Tests
 
