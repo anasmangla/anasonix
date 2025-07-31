@@ -1,10 +1,6 @@
-.PHONY: dev build test
-
-dev:
-	@npm run dev
-
-build:
-	@npm run build
+.PHONY: test
 
 test:
-	@npm test
+
+	 npm test
+
