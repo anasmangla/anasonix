@@ -1,81 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anasonix Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.3/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     function toggleFaq(id) {
       const elem = document.getElementById(id);
       elem.classList.toggle('hidden');
     }
+    window.addEventListener('DOMContentLoaded', () => {
+      AOS.init();
+    });
   </script>
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 min-h-screen">
   <div class="container mx-auto p-6">
-    <h1 class="text-4xl font-bold text-center mb-8">Our Services</h1>
+    <h1 class="text-4xl font-bold text-center mb-10" data-aos="fade-down">Our Services</h1>
 
-    <!-- Web Development -->
-    <section class="mb-8 bg-white p-6 rounded shadow">
+    <!-- Service: Web Development -->
+    <section class="mb-8 bg-white p-6 rounded shadow" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-2">Web Development</h2>
       <p class="mb-2">We build modern, responsive websites tailored to your business goals using the latest technologies.</p>
-      <ul class="list-disc list-inside">
+      <ul class="list-disc list-inside text-gray-700">
         <li>Benefits: Custom designs, mobile-friendly layouts, and scalable architecture.</li>
         <li>Target Audience: Startups, small businesses, and enterprises seeking a strong online presence.</li>
       </ul>
     </section>
 
-    <!-- Digital Marketing -->
-    <section class="mb-8 bg-white p-6 rounded shadow">
+    <!-- Service: Digital Marketing -->
+    <section class="mb-8 bg-white p-6 rounded shadow" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-2">Digital Marketing</h2>
       <p class="mb-2">Our marketing experts help you reach the right audience through data-driven campaigns.</p>
-      <ul class="list-disc list-inside">
+      <ul class="list-disc list-inside text-gray-700">
         <li>Benefits: Increased brand visibility, higher engagement, and measurable ROI.</li>
         <li>Target Audience: Businesses looking to expand their reach across digital channels.</li>
       </ul>
     </section>
 
-    <!-- SEO Optimization -->
-    <section class="mb-8 bg-white p-6 rounded shadow">
+    <!-- Service: SEO Optimization -->
+    <section class="mb-8 bg-white p-6 rounded shadow" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-2">SEO Optimization</h2>
       <p class="mb-2">We optimize your website to rank higher on search engines and attract organic traffic.</p>
-      <ul class="list-disc list-inside">
+      <ul class="list-disc list-inside text-gray-700">
         <li>Benefits: Improved search rankings, more qualified leads, and enhanced credibility.</li>
         <li>Target Audience: Website owners wanting sustainable, long-term traffic growth.</li>
       </ul>
     </section>
 
-    <!-- Data Analytics -->
-    <section class="mb-8 bg-white p-6 rounded shadow">
+    <!-- Service: Data Analytics -->
+    <section class="mb-8 bg-white p-6 rounded shadow" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-2">Data Analytics</h2>
       <p class="mb-2">Gain valuable insights from your data with our comprehensive analytics solutions.</p>
-      <ul class="list-disc list-inside">
+      <ul class="list-disc list-inside text-gray-700">
         <li>Benefits: Informed decision-making, trend analysis, and actionable reports.</li>
         <li>Target Audience: Organizations seeking to leverage data for strategic advantage.</li>
       </ul>
     </section>
 
-    <!-- FAQ Accordion -->
-    <section class="bg-white p-6 rounded shadow">
+    <!-- FAQ Section -->
+    <section class="bg-white p-6 rounded shadow" data-aos="fade-up">
       <h2 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+
       <div>
         <button class="w-full text-left py-2" onclick="toggleFaq('faq1')">
-          <span class="font-medium">How do I get a quote?</span>
+          <span class="font-medium"><i class="fa-regular fa-circle-question mr-2"></i>How do I get a quote?</span>
         </button>
         <p id="faq1" class="hidden pl-4 pb-4 text-gray-700">Contact us via email with your project details, and we'll provide a custom quote.</p>
       </div>
-      <hr>
+      <hr class="my-2" />
       <div>
         <button class="w-full text-left py-2" onclick="toggleFaq('faq2')">
-          <span class="font-medium">What is your turnaround time?</span>
+          <span class="font-medium"><i class="fa-regular fa-clock mr-2"></i>What is your turnaround time?</span>
         </button>
-        <p id="faq2" class="hidden pl-4 pb-4 text-gray-700">Project timelines depend on complexity, but most websites are completed within 4-6 weeks.</p>
+        <p id="faq2" class="hidden pl-4 pb-4 text-gray-700">Project timelines depend on complexity, but most websites are completed within 4–6 weeks.</p>
       </div>
-      <hr>
+      <hr class="my-2" />
       <div>
         <button class="w-full text-left py-2" onclick="toggleFaq('faq3')">
-          <span class="font-medium">Do you offer ongoing support?</span>
+          <span class="font-medium"><i class="fa-solid fa-life-ring mr-2"></i>Do you offer ongoing support?</span>
         </button>
         <p id="faq3" class="hidden pl-4 pb-4 text-gray-700">Yes, we provide maintenance packages and support plans to keep your site running smoothly.</p>
       </div>
