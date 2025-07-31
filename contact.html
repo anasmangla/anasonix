@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Anasonix</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.3/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Anasonix</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.4.3/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => AOS.init());
+  </script>
 </head>
-<body class="bg-gray-100 min-h-screen p-8">
-  <h1 class="text-3xl font-bold mb-4">Contact Us</h1>
-  <p class="text-gray-600">Reach out and we'll get back to you.</p>
+<body class="bg-gray-100 min-h-screen flex flex-col justify-center items-center p-6 text-gray-800">
+
+  <div class="bg-white rounded shadow-lg p-8 w-full max-w-2xl" data-aos="fade-up">
+    <h1 class="text-3xl font-bold mb-4 text-center">Contact Us</h1>
+    <p class="mb-6 text-center text-gray-600">We'd love to hear from you. Please fill out the form below or contact us directly.</p>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/mayvlzyv" method="POST" class="space-y-4">
+      <div>
+        <label for="name" class="block text-sm font-medium">Name</label>
+        <input type="text" id="name" name="name" required class="w-full border rounded px-3 py-2 focus:ring focus:border-blue-400" />
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium">Email</label>
+        <input type="email" id="email" name="email" required class="w-full border rounded px-3 py-2 focus:ring focus:border-blue-400" />
+      </div>
+      <div>
+        <label for="phone" class="block text-sm font-medium">Phone</label>
+        <input type="tel" id="phone" name="phone" class="w-full border rounded px-3 py-2 focus:ring focus:border-blue-400" />
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium">Message</label>
+        <textarea id="message" name="message" rows="4" required class="w-full border rounded px-3 py-2 focus:ring focus:border-blue-400"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Send Message</button>
+    </form>
+
+    <!-- Contact Info -->
+    <div class="mt-8 text-center space-y-2">
+      <p><i class="fas fa-phone text-blue-600 mr-1"></i> <a href="tel:+1234567890" class="hover:underline">+1 (234) 567-890</a></p>
+      <p><i class="fas fa-envelope text-blue-600 mr-1"></i> <a href="mailto:info@anasonix.com" class="hover:underline">info@anasonix.com</a></p>
+      <p><i class="fas fa-map-marker-alt text-blue-600 mr-1"></i> 123 Main Street, Anytown, USA</p>
+      <a href="#" class="inline-block mt-4 bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition">Schedule a Call</a>
+    </div>
+  </div>
+
 </body>
 </html>
