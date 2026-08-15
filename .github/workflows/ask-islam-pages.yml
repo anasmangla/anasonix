@@ -1,10 +1,11 @@
-name: Publish Ask Islam Form
+name: Publish Anasonix Apps
 
 on:
   push:
     branches: ["main"]
     paths:
       - "ask-islam/**"
+      - "Qadian/**"
       - ".github/workflows/ask-islam-pages.yml"
   workflow_dispatch:
 
@@ -14,7 +15,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "ask-islam-pages"
+  group: "github-pages"
   cancel-in-progress: false
 
 jobs:
@@ -32,10 +33,18 @@ jobs:
         with:
           enablement: true
 
-      - name: Upload form
+      - name: Prepare site
+        run: |
+          mkdir -p _site/Qadian
+          cp -R ask-islam/. _site/
+          cp Qadian/index.html Qadian/app.js Qadian/session.js Qadian/diary-data.js Qadian/styles.css Qadian/robots.txt Qadian/sitemap.xml _site/Qadian/
+          cp -R Qadian/assets Qadian/sessions _site/Qadian/
+          touch _site/.nojekyll
+
+      - name: Upload site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: "./ask-islam"
+          path: "./_site"
 
       - name: Deploy to GitHub Pages
         id: deployment
