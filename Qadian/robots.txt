@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://anasmangla.github.io/anasonix/Qadian/sitemap.xml
